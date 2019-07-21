@@ -53,6 +53,11 @@ client.on('message', msg => {
 })
 
 client.on('message', msg => {
+  if (msg.content === 'bot') {
+    msg.reply('kung maka bot ka wagas, grabe ka saaken :(')
+  }
+})
+client.on('message', msg => {
   if (msg.content === 'ML') {
     msg.reply('ml ml pa kayo bat kasi ayaw nyo pa mag LoL?')
   }
