@@ -29,8 +29,22 @@ client.on('message', msg => {
   }
 })
 
+client.on('message', msg => {
+  if (msg.content === 'laro') {
+    msg.reply('sigi sali nyo ako kahit AI kahit hindi ako totoong tao hehe.')
+  }
+})
+
+client.on('message', msg => {
+  if (msg.content === 'ml') {
+    msg.reply('ml ml pa kayo bat kasi ayaw nyo pa mag LoL?')
+  }
+})
+
 client.on('guildMemberAdd', member => {
-    member.send(`Welcome sa Discord namen mga bobo, ako nga pala ung ginawa si JC. type zzhelp for more info.`)
+    member.send(
+      `Welcome sa Discord namen mga bobo, ako nga pala ung ginawa si JC. type zzhelp for more info.`
+    )
 })
 
 client.login('NjAyMjk4NjAzOTQzNDkzNjYy.XTPq9w.O_ROYocZubMlqhTLOJ3Q7SHY3d8')
