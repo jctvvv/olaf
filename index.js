@@ -1,3 +1,4 @@
+require("dotenv").config();
 const Discord = require('discord.js')
 const client = new Discord.Client()
 
@@ -73,4 +74,4 @@ client.on('guildMemberAdd', member => {
     )
 })
 
-client.login('NjAyMjk4NjAzOTQzNDkzNjYy.XTPq9w.O_ROYocZubMlqhTLOJ3Q7SHY3d8')
+client.login(process.env.BOT_TOKEN)
