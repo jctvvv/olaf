@@ -64,7 +64,7 @@ client.on('message', msg => {
   }
 })
 client.on('message', msg => {
-  if (msg.content === '!hello') {
+  if (msg.content === 'shello') {
     msg.reply('Welcome sa Discord namen mga bobo, ako nga pala ung ginawa si JC. type zzhelp for more info.')
   }
 })
