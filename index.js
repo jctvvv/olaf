@@ -19,6 +19,11 @@ client.on('message', msg => {
 })
 
 client.on('message', msg => {
+  if (msg.content === 'jyle') {
+    msg.reply('ah si jyle, sya nga pala ung pinaka kyut, pinaka maganda at pinaka understanding na babae sa buong mundo :) hehe')
+  }
+})
+client.on('message', msg => {
   if (msg.content === 'Cute') {
     msg.reply('luh, pinagsasabi mo dyan?')
   }
@@ -70,7 +75,7 @@ client.on('message', msg => {
 })
 client.on('message', msg => {
   if (msg.content === 'shello') {
-    msg.reply('Welcome sa Discord namen mga bobo, ako nga pala ung ginawa si JC. type zzhelp for more info.')
+    msg.reply('Welcome sa Discord namen mga bobo, ako nga pala ung slave ni JC hehe. type zzhelp for more info.')
   }
 })
 client.on('guildMemberAdd', member => {
