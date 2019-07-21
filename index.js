@@ -18,6 +18,11 @@ client.on('message', msg => {
 })
 
 client.on('message', msg => {
+  if (msg.content === 'Cute') {
+    msg.reply('luh, pinagsasabi mo dyan?')
+  }
+})
+client.on('message', msg => {
   if (msg.content === 'avakin') {
     msg.reply('pansinin nyo naman gais, nakakaawa na to oh!')
   }
@@ -30,6 +35,11 @@ client.on('message', msg => {
 })
 
 client.on('message', msg => {
+  if (msg.content === 'jc') {
+    msg.reply('bat mo tinatawag ung gumawa saaken huh!')
+  }
+})
+client.on('message', msg => {
   if (msg.content === 'laro') {
     msg.reply('sigi sali nyo ako kahit AI kahit hindi ako totoong tao hehe.')
   }
@@ -41,6 +51,22 @@ client.on('message', msg => {
   }
 })
 
+client.on('message', msg => {
+  if (msg.content === 'ML') {
+    msg.reply('ml ml pa kayo bat kasi ayaw nyo pa mag LoL?')
+  }
+})
+
+client.on('message', msg => {
+  if (msg.content === 'zzhelp') {
+    msg.reply('balakayo dyan di ko pa to nacocode HAHAHA')
+  }
+})
+client.on('message', msg => {
+  if (msg.content === '!hello') {
+    msg.reply('Welcome sa Discord namen mga bobo, ako nga pala ung ginawa si JC. type zzhelp for more info.')
+  }
+})
 client.on('guildMemberAdd', member => {
     member.send(
       `Welcome sa Discord namen mga bobo, ako nga pala ung ginawa si JC. type zzhelp for more info.`
